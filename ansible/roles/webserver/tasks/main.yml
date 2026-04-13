@@ -1,1 +1,17 @@
-cd
+---
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Copy environment-specific index.html
+  copy:
+    src: "index-{{ group_names[0] }}.html"
+    dest: /var/www/html/index.html
+
+- name: Start and enable Nginx
+  service:
+    name: nginx
+    state: restarted
+    enabled: yes
