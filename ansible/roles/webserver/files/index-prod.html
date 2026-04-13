@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Turner | DevOps Engineer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #0f0f0f;
+        color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 30px;
+      }
+
+      .card {
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 16px;
+        max-width: 500px;
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 0 40px rgba(255, 100, 0, 0.1);
+      }
+
+      .avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #ff6600;
+        margin-bottom: 16px;
+      }
+
+      .name {
+        font-size: 26px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .role {
+        font-size: 14px;
+        color: #ff6600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-top: 4px;
+        margin-bottom: 20px;
+      }
+
+      .bio {
+        font-size: 14px;
+        color: #aaaaaa;
+        line-height: 1.7;
+        margin-bottom: 24px;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 28px;
+      }
+
+      .skill-tag {
+        background: #2a2a2a;
+        border: 1px solid #444;
+        color: #ff6600;
+        padding: 5px 14px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid #2a2a2a;
+        margin-bottom: 24px;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .social-links a {
+        text-decoration: none;
+        color: #cccccc;
+        background: #2a2a2a;
+        padding: 8px 18px;
+        border-radius: 8px;
+        font-size: 13px;
+        border: 1px solid #333;
+        transition: all 0.2s;
+      }
+
+      .social-links a:hover {
+        background: #ff6600;
+        color: #fff;
+        border-color: #ff6600;
+      }
+
+      .env-badge {
+        margin-top: 30px;
+        display: inline-block;
+        background: #ff6600;
+        color: #000;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 20px;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        class="avatar"
+        src="https://api.dicebear.com/7.x/avataaars/svg?seed=AlexTurner"
+        alt="Alex Turner"
+      />
+
+      <div class="name">Maruti Patil</div>
+      <div class="role">DevOps Engineer</div>
+
+      <p class="bio">
+        2+ years of experience building and automating cloud infrastructure on
+        AWS. Passionate about IaC, CI/CD pipelines, and making deployments
+        boring (in a good way).
+      </p>
+
+      <!-- Skills -->
+      <div class="skills">
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">Terraform</span>
+        <span class="skill-tag">Ansible</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Kubernetes</span>
+        <span class="skill-tag">Jenkins</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">CloudWatch</span>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://github.com" target="_blank">🐙 GitHub</a>
+        <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+        <a href="mailto:alex@example.com">📧 Email</a>
+      </div>
+
+      <div class="env-badge">🏭 PROD ENVIRONMENT</div>
+    </div>
+  </body>
+</html>
